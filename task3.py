@@ -30,6 +30,6 @@ sharpened_image = cv2.filter2D(denoised_image, -1, sharpen_kernel)
 
 # Отображение изображений
 cv2.imshow('Sharpened Image', sharpened_image)
-cv2.imwrite('Sharpened-Image.jpg', sharpened_image)
+cv2.imwrite('sharpened_image.jpg', sharpened_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
