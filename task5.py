@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Загрузка изображения
-image = cv2.imread('./balls.jpeg')
+image = cv2.imread('./images/balls.jpeg')
 
 # Преобразование изображения в цветовое пространство HSV
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -27,5 +27,6 @@ cv2.drawContours(result_image, contours, -1, (0, 255, 0), 2)
 
 # Отображение результата
 cv2.imshow('Blue Balls', result_image)
+cv2.imwrite('blue_balls.jpg', result_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
