@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Загрузка изображения
-image = cv2.imread('./wolf.jpg')
+image = cv2.imread('./images/wolf.jpg')
 
 # Получение размеров изображения
 height, width = image.shape[:2]
